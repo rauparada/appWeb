@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Canciones</title>
+     <meta charset="utf-8">
+
+     <script>
+         var canciones = [
+             "Navidad sin ti",
+             "Jugo de pina",
+             "La macarena",
+             "O me voy  o te vas",
+             "Mas que tu amigo",
+             "Cuando te acuerdes de mi"
+         ];
+
+         function buscarCancion(noombre){
+             var cancion;
+             for(var i=0; i<canciones.length; i++){
+                 cancion = canciones[i];
+                 if(canciones[i].indexOf(noombre)>=0){
+                     return cancion;
+                 }
+             }
+             return "Cancion no encontrada";
+         }
+          var cancionEcontrada= buscarCancion("Jugo");
+          alert(cancionEcontrada);
+
+          </script>
+</head>
+<body>
+
+</body>
+</html>
